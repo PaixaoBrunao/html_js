@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <link rel="stylesheet" href="./main.css"/>
+    <script>
+        function validarNumero(event) {
+            // Previne o envio do formulário e o recarregamento da página
+            event.preventDefault();
+            
+            // Obtém os valores dos inputs 'numero1' e 'numero2' e os converte para números decimais
+            const num1 = parseFloat(document.getElementById('numero1').value);
+            const num2 = parseFloat(document.getElementById('numero2').value);
+            // Compara os dois números e define a mensagem de acordo com o resultado da comparação
+            if (num1 < num2) {
+                // Se o primeiro número for menor, mostra a mensagem de "entrada válida"
+                document.getElementById('resultado').innerText = "Essa entrada é válida!";
+            } else {
+                // Se o primeiro número for maior ou igual ao segundo, mostra "entrada inválida"
+                document.getElementById('resultado').innerText = "Essa entrada é inválida!";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Exercício Módulo 7</h1>
+    <h2>Validação de números</h2>
+    <h4>Digite um número nos Campos 'A' e 'B' para que eles sejam validados</h4>
+    <div class="container">
+        <!-- Formulário contendo dois campos de entrada para números -->
+        <form>
+            <!-- Input para o primeiro número -->
+            <input id="numero1" type="number" required placeholder="Campo 'A'"/>
+            
+            <!-- Input para o segundo número -->
+            <input id="numero2" type="number" required placeholder="Campo 'B'"/>
+            
+            <!-- Botão que chama a função validarNumero ao ser clicado -->
+            <button onclick="validarNumero(event)" type="submit">Validar</button>
+        </form>
+        
+        <!-- Parágrafo onde será exibido o resultado da validação -->
+        <p id="resultado"></p>
+    </div>
+</body>
+</html>

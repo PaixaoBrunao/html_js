@@ -1,0 +1,88 @@
+    /* Reseta as margens e paddings padrão para todos os elementos */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Estilo para o body, mantém o fundo suave e centraliza o conteúdo */
+    body {
+        font-family: Arial, sans-serif; /* Fonte mais clean e legível */
+        background-color: #f4f7f6; /* Cor de fundo suave */
+        color: #333; /* Cor do texto mais escura */
+        display: flex;
+        flex-direction: column; /* Organiza os elementos em coluna */
+        align-items: center; /* Centraliza horizontalmente os elementos */
+        height: 100vh; /* Altura total da viewport */
+        padding: 20px;
+    }
+    
+    /* Estilo para o título principal (h1), no topo da página */
+    h1 {
+        font-size: 24px; /* Tamanho maior para o título */
+        color: #007bff; /* Cor azul para destaque */
+        margin-bottom: 10px; /* Espaçamento abaixo do título */
+    }
+    
+    /* Estilo do subtítulo (h2), logo abaixo do h1 */
+    h2 {
+        font-size: 20px;
+        color: #5a5a5a; /* Cor mais suave para o subtítulo */
+        margin-bottom: 20px; /* Espaçamento abaixo do h2 */
+    }
+    
+    /* Estilo das instruções (h4), posicionado próximo ao formulário */
+    h4 {
+        font-size: 16px;
+        color: #888; /* Cor mais clara para o texto explicativo */
+        margin-top: 40px;
+        text-align: center; /* Centraliza o texto */
+    }
+    
+    /* Estilo do container do formulário, centralizado na tela */
+    .container {
+        background-color: #fff; /* Fundo branco para destacar o conteúdo */
+        padding: 20px;
+        border-radius: 8px; /* Borda arredondada */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+        text-align: center; /* Alinhamento central do texto */
+        max-width: 400px; /* Largura máxima para um layout mais compacto */
+        width: 100%; /* Para dispositivos móveis */
+        margin-top: 50px; /* Centraliza o formulário no meio da página */
+        margin-bottom: auto; /* Cria espaço acima e abaixo */
+    }
+    
+    /* Estilo dos inputs para tornar a interface mais amigável */
+    input {
+        width: 80%; /* Largura de 80% do container */
+        padding: 10px; /* Espaçamento interno dos campos */
+        margin-bottom: 15px; /* Espaçamento abaixo de cada input */
+        border: 1px solid #ccc; /* Borda cinza clara */
+        border-radius: 4px; /* Borda arredondada */
+        font-size: 16px; /* Tamanho de texto mais legível */
+    }
+    
+    /* Estilo do botão */
+    button {
+        background-color: #007bff; /* Fundo azul */
+        color: white; /* Texto branco */
+        padding: 10px 20px; /* Espaçamento interno do botão */
+        border: none; /* Sem borda */
+        border-radius: 4px; /* Borda arredondada */
+        font-size: 16px; /* Tamanho da fonte */
+        cursor: pointer; /* Cursor de mão ao passar o mouse */
+        transition: background-color 0.3s ease; /* Efeito de transição na cor */
+    }
+    
+    /* Estilo para o botão quando o usuário passa o mouse por cima */
+    button:hover {
+        background-color: #0056b3; /* Azul mais escuro no hover */
+    }
+    
+    /* Estilo da área de resultado */
+    #resultado {
+        font-size: 18px; /* Tamanho maior para a mensagem de resultado */
+        margin-top: 15px; /* Espaçamento acima da mensagem */
+        color: #333; /* Cor do texto */
+    }
+    
